@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { inter } from '@/lib/fonts'
+import { inter, archivoBlack } from '@/lib/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -17,9 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${archivoBlack.variable} font-sans antialiased`}
+      >
         <ThemeProvider attribute="class">
-          <div className="min-h-screen bg-stone-100 dark:bg-zinc-900 text-zinc-900 dark:text-stone-200 transition-colors duration-300 relative">
+          <div className="min-h-screen bg-stone-50 dark:bg-zinc-900 text-zinc-900 dark:text-stone-200 transition-colors duration-300 relative">
             <div
               className="absolute inset-0 w-full h-full opacity-[0.08] dark:opacity-[0.06]"
               style={{

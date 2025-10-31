@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)'],
+        'archivo-black': ['var(--font-archivo-black)'],
       },
     },
   },
