@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme' // <--- 1. Import default theme
 
 const config: Config = {
   content: [
@@ -10,8 +11,12 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        'archivo-black': ['var(--font-archivo-black)'],
+        // 2. Add fallback fonts after your variable
+        sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+        'archivo-black': [
+          'var(--font-archivo-black)',
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
     },
   },

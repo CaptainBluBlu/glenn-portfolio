@@ -1,11 +1,12 @@
 // This file would normally contain the Sanity client configuration
 // For now, it will export mock data
+import Project from "./interfaces";
 
-export const MOCK_PROJECTS = [
-  { id: 1, title: 'Retro E-Commerce', description: 'An online store with a pixel-art theme, built with Next.js and Stripe.', imageUrl: 'https://placehold.co/600x600/d1d5db/374151?text=Project+1', githubUrl: '#', blogUrl: '#', liveUrl: '#' },
-  { id: 2, title: 'DataViz Dashboard', description: 'Real-time analytics dashboard using D3.js and a Sanity.io backend.', imageUrl: 'https://placehold.co/600x600/d1d5db/374151?text=Project+2', githubUrl: '#', blogUrl: null, liveUrl: '#' },
-  { id: 3, title: 'Markdown Blog Engine', description: 'A lightweight, fast blog built with Astro and MDX.', imageUrl: 'https://placehold.co/600x600/d1d5db/374151?text=Project+3', githubUrl: '#', blogUrl: '#', liveUrl: '#' },
-  { id: 4, title: 'AI Copywriter', description: 'SaaS tool for generating marketing copy using the Gemini API.', imageUrl: 'https://placehold.co/600x600/d1d5db/374151?text=Project+4', githubUrl: '#', blogUrl: '#', liveUrl: null },
+export const MOCK_PROJECTS:Project[] = [
+  { id: 1, title: 'Retro E-Commerce', description: 'An online store with a pixel-art theme, built with Next.js and Stripe.', imgSrc: 'https://placehold.co/600x600/d1d5db/374151?text=Project+1', githubUrl: '#', blogUrl: '#', liveUrl: '#' },
+  { id: 2, title: 'DataViz Dashboard', description: 'Real-time analytics dashboard using D3.js and a Sanity.io backend.', imgSrc: 'https://placehold.co/600x600/d1d5db/374151?text=Project+2', githubUrl: '#', blogUrl: null, liveUrl: '#' },
+  { id: 3, title: 'Markdown Blog Engine', description: 'A lightweight, fast blog built with Astro and MDX.', imgSrc: 'https://placehold.co/600x600/d1d5db/374151?text=Project+3', githubUrl: '#', blogUrl: '#', liveUrl: '#' },
+  { id: 4, title: 'AI Copywriter', description: 'SaaS tool for generating marketing copy using the Gemini API.', imgSrc: 'https://placehold.co/600x600/d1d5db/374151?text=Project+4', githubUrl: '#', blogUrl: '#', liveUrl: null },
 ];
 
 export const MOCK_POSTS = [

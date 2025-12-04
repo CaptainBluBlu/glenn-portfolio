@@ -1,17 +1,9 @@
 import { Github, Feather, ExternalLink } from 'lucide-react'
 import Image from 'next/image'
 import Card from './ui/Card'
+import IProjectCard from '@/lib/interfaces'
 
-interface Project {
-  title: string
-  description: string
-  imgSrc: string
-  githubUrl?: string
-  blogUrl?: string | null
-  liveUrl?: string | null
-}
-
-const ProjectCard = ({ project }: { project: Project }) => (
+const ProjectCard = ({ project }: { project: IProjectCard }) => (
   <Card>
     <Image
       src={project.imgSrc}

@@ -10,12 +10,11 @@ const HomePage = () => {
     <main>
       <FullVHSection className="text-center">
         <div>
-          <h1 className="text-6xl sm:text-8xl lg:text-9xl font-archivo-black tracking-tighter text-zinc-900 dark:text-stone-100 uppercase">
-            JANE DOE
+          <h1 className="text-6xl sm:text-8xl lg:text-9xl font-archivo-black tracking-tighter text-green-900 dark:text-lime-100 uppercase">
+            Glenn Lim
           </h1>
           <p className="mt-6 text-xl sm:text-2xl text-zinc-600 dark:text-stone-300 max-w-3xl mx-auto">
-            A creative developer & digital strategist, crafting pixel-perfect
-            experiences from the 8-bit era to the modern web.
+            A fullstack developer and data enthusiast.
           </p>
           <Link
             href="/projects"

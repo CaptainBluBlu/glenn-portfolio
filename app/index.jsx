@@ -118,7 +118,7 @@ const Header = ({ navigate, isDarkMode, onToggleDarkMode }) => {
             <button onClick={() => navigate('home')} className="flex items-center gap-2" aria-label="Navigate home">
               <LogoIcon />
               <span className="text-xl font-bold tracking-wider text-zinc-900 dark:text-stone-100 hidden sm:block">
-                THE DAILY DEV
+                EZPZ
               </span>
             </button>
           </div>
@@ -173,7 +173,7 @@ const HomePage = ({ navigate }) => {
       <FullVHSection className="bg-stone-100 dark:bg-zinc-900 text-center">
         <div>
           <h1 className="text-6xl sm:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 dark:text-stone-100">
-            JANE DOE
+          Glenn Lim Phang Zhen
           </h1>
           <p className="mt-6 text-xl sm:text-2xl text-zinc-700 dark:text-stone-300 max-w-3xl mx-auto font-medium">
             A creative developer & digital strategist, crafting pixel-perfect experiences from the 8-bit era to the modern web.

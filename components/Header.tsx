@@ -29,7 +29,7 @@ export const Header = () => {
             >
               <LogoIcon />
               <span className="text-xl font-bold tracking-wider text-zinc-900 dark:text-stone-100 hidden sm:block">
-                THE DAILY DEV
+                EZPZ.co
               </span>
             </Link>
           </div>
